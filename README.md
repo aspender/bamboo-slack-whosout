@@ -4,9 +4,9 @@ An AWS Lambda function to query the BambooHR who's out API and post to slack.
 
 This will query the [Time Off API](https://www.bamboohr.com/api/documentation/time_off.php) to obtain the list of people within your organisation who have any form of time-off booked for the current day. It will then post one or more of three messages to the configured Slack channel:
 
-If today is a configured holiday: `Today is: Christmas Day! :confetti_ball:`
-If nodbody is out: `Nobody is out today! :tada:`
-If people are out: `Who's out today: Bob Smith, Alice Jones`
+* If today is a configured holiday: `Today is: Christmas Day! :confetti_ball:`
+* If nodbody is out: `Nobody is out today! :tada:`
+* If people are out: `Who's out today: Bob Smith, Alice Jones`
 
 ## Requirements
 
