@@ -96,7 +96,7 @@ def lambda_handler(event, context):
         names.append(who.get("name"))
 
     if names:
-      text = "*Who's out today:* {}".format(', '.join(names))
+      text = "*Who's out today:* \n{}".format('\n'.join(names))
       posttoslack(text)
   else:
     posttoslack("Nobody is out today! :tada:")
